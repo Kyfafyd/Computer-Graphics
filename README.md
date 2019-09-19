@@ -1,2 +1,2 @@
 # Computer-Graphics-Course
-For 2019 course, include several homework and project
+For 2019 course, including several homework and project
