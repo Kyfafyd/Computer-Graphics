@@ -1,3 +1,3 @@
 # Simple practice
 
-Draw a circle based on Bresenham algorithm
+- Draw a circle based on Bresenham algorithm
