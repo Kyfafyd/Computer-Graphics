@@ -1,6 +1,3 @@
-# Computer-Graphics-Course
+# Computer-Graphics-Learning
 
-- For 2019 course, include several homework and project
 - Build on VS2017(OpenGL)
-
-
