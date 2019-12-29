@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Draw a circle by Bezier Curves</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+</head>
+
+<body>
+  <center><h1> Draw a circle by Bezier Curves</h1></center>
+
+  <div id='app' class='container'>
+    <svg v-bind:width='width' v-bind:height='height' class='black-border'>
+      <text v-if='!hidePoints' x='346' y='16' font-size='12px'>Hover a red circle to show its coordinate</text>
+      <g>
+        <path stroke='black' d='M 0,300 L 600,300 Z' />
+        <path stroke='black' d='M 300,0 L 300,600 Z' />
+      </g>
+      <g>
+        <path stroke='blue' fill='none' v-bind:d='drawCircle' />
+        <g v-if='!hidePoints' v-for='p in drawControlPoints' class='show-text-on-hover'>
+          <circle v-bind:cx='p.x' v-bind:cy='p.y' v-bind:r='p.r' fill='red' />
+          <text v-bind:x='p.x + 10' v-bind:y='p.y + 20'>{{ p.text }}</text>
+        </g>
+        <text v-for='(line,index) in pathLines' x='6' v-bind:y='16 + index * 10' font-size='12px'>{{ line }}</text>
+      </g>
+    </svg>
+
+    <div class='input'>
+      <section class='margin-top-bottom'>
+        Algorithm:
+        <ul class='list'>
+          <li><label><input type='radio' value='arc' v-model='strategy' />Arc</label></li>
+          <li><label><input type='radio' value='cubic_bezier' v-model='strategy' />Cubic Bezier</label></li>
+        </ul>
+      </section>
+
+      <section class='margin-top-bottom'>
+        Radius:
+        <ul v-if='figure == "circle"' class='list'>
+          <li><input type='number' v-model.number='rx' v-bind:value='rx' /></li>
+        </ul>
+      </section>
+
+      <section class='margin-top-bottom'>
+        Whether hide points?
+        <ul class="list">
+          <li><label><input type='checkbox' v-model='hidePoints' />Hide points</label></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</body>
+
+<script src='vue.min.js'></script>
+<script src='circle.js'></script>
+
+</html>
