@@ -5,25 +5,35 @@
 ### Directory
 
 - Include
-  -  [glut.h](Include/glut.h) 
-  -  [glew.h](Include/glew.h) 
-  -  [CxBitmap.h](Include/CxBitmap.h) 
-  -  [stanford_bunny.h](Include/stanford_bunny.h) 
+
+  - [gl.h](include/gl.h) 
+
+  - [glu.h](include/glu.h) 
+  - [glut.h](Include/glut.h) 
+  - [glew.h](Include/glew.h) 
+  - [CxBitmap.h](Include/CxBitmap.h) 
+  - [stanford_bunny.h](Include/stanford_bunny.h) 
+
 - Expriment
-  -  Draw Student ID
+  
+  - Draw Student ID
   - Rabbit
   - Teapot
   - Three Dimensional Geometric Transformation
   - Texture mapping
   - Mouse Function
+  - Edge Detection
+  
 - Homework
   - Bresenham
   - Four Viewport
   - Solar System
   - Draw a circle by Bezier Curves
   - Ray Tracing Car
+  
 - Project
-  - Construct a 3D molecule
+  
+  - [Construct a 3D molecule](https://github.com/Liang-ZX/CG2019)
 
 ### Platform
 
