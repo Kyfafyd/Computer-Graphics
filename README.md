@@ -4,16 +4,6 @@
 
 ### Directory
 
-- Include
-
-  - [gl.h](include/gl.h) 
-
-  - [glu.h](include/glu.h) 
-  - [glut.h](Include/glut.h) 
-  - [glew.h](Include/glew.h) 
-  - [CxBitmap.h](Include/CxBitmap.h) 
-  - [stanford_bunny.h](Include/stanford_bunny.h) 
-
 - Expriment
   
   - Draw Student ID
